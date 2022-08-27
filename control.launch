@@ -1,0 +1,8 @@
+<launch>
+<node name="turtlesim_motion_pose" pkg="controller" type="final.py"/>
+<node name="turtle_pose_subscriber" pkg="controller" type="subscriber.py" output="screen"/>
+<param name="x_goal"  value="3.0"/>
+<param name="y_goal"  value="5.0"/>
+<param name="K_linear"  value="0.5"/>
+<param name="K_angular"  value="2.0"/>
+</launch>
